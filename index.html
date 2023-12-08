@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess and Hint</title>
+    <style>
+        #hintBox {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label for="guess">Select a Guess:</label>
+    <select id="guess">
+    </select>
+
+    <button onclick="showHint()">Hint</button>
+    <button onclick="guess()">Guess</button>
+    <div style="display: inline;" id="answer"></div>
+    <div id="hintBox">
+        <p>Here's your hint: This is just a sample hint.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
